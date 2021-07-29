@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background: rgb(60, 200, 154);
     font-size: 16px;
@@ -26,7 +30,7 @@ header{
     display: flex;
     flex-direction: column;
     list-style: none;
-    display: none;
+  
 }
 
 .nav-lista li {
