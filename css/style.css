@@ -6,10 +6,12 @@
 
 html{
     scroll-behavior: smooth;
+    animation: fade 2s ease-in;
 }
 
 body {
     background: rgb(60, 200, 154);
+    transition: 3s ease-in background;
     font-size: 16px;
     font-family: sans-serif;
 }
@@ -68,4 +70,13 @@ main {
     text-align: justify;
     display: flex;
     margin: 0 auto;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
