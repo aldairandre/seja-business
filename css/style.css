@@ -29,10 +29,10 @@ nav {
 }
 
 
-.fixed{
+.nav__fixed{
     position: fixed;
-    display: flex;
-    align-items: center;
+   display: flex;
+   align-items: baseline;
 }
 
 .logo h2 {
