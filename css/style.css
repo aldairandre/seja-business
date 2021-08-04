@@ -23,6 +23,14 @@ header {
     min-height: 214px;
 }
 
+.banner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 8px 25px;
+    
+}
+
 nav {
     max-height: 28px;
     position: relative;
@@ -31,8 +39,8 @@ nav {
 
 .nav__fixed{
     position: fixed;
-   display: flex;
-   align-items: baseline;
+    display: flex;
+    align-items: baseline;
 }
 
 .logo h2 {
@@ -68,20 +76,9 @@ nav {
     color: black;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-.banner{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 8px 25px;
-}
 
 .container-descridcao {
-    margin-top: 20px;
+    position: static;
     height: 100%;
 }
 
@@ -109,6 +106,13 @@ main {
     font-family: 'Bebas Neue', cursive;
   
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 @keyframes fade {
     from {
