@@ -12,44 +12,33 @@ html{
 }
 
 body {
+    height: 100%;
     background: rgb(255, 255, 255);
     font-size: 16px;
     font-family: sans-serif;
 }
 
 header {
-    background: url('../svg_img/bg-banner2.png') no-repeat 50% 50%;
-    background-size: cover;
-    min-height: 214px;
-}
-
-.banner{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 8px 25px;
-    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: salmon;
 }
 
 nav {
-    max-height: 28px;
-    position: relative;
-}
-
-
-.nav__fixed{
-    position: fixed;
     display: flex;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
 }
 
 .logo h2 {
     color: rgb(26, 85, 161);
 }
 
-.icone{
-    margin-left: 20%;
-}
 
 nav {
     position: relative;
@@ -76,6 +65,21 @@ nav {
     color: black;
 }
 
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner{
+    width: 100%;
+    min-height: 350px;
+    margin-top: 38px;
+    background-image: url(../svg_img/029-drawkit-full-stack-man-colour.svg );
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
 
 .container-descridcao {
     position: static;
@@ -84,7 +88,6 @@ nav {
 
 .container-descridcao h1 {
     max-width: 60%; 
-    height: 100%;
     line-height: 2rem;
     font-size: 16pt;
     font-family: 'Bebas Neue', cursive,sans-serif;
@@ -107,11 +110,72 @@ nav {
   
 }
 
-main {
-    display: flex;
-    flex-direction: column;
+.btn-saiba-mais {
+    width: 60px;
+    height: 30px;
+    color: #fff;
+    background-color: darkturquoise;
+    line-height: 20 px;
+    margin-left: 40px;
 }
 
+.btn-saiba-mais a {
+    margin: o auto;
+}
+
+
+.quem-nos-somos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: cornflowerblue;
+  padding: 20px 0px;
+  
+}
+.__descricao{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px double rgb(241, 241, 241);
+    box-shadow: 1px 1px 20px black;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(300);
+}
+
+.item-quem {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: darkgray;
+    margin-bottom: 10px;
+}
+
+.__descricao h1 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.__descricao p {
+    text-align: center;
+}
+
+.nosso-servicos {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(223, 23, 23);
+    padding: 20px 0px;
+}
+
+.localizacao {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 145, 0);
+    padding: 20px 0px;
+}
 
 
 @keyframes fade {
@@ -121,4 +185,10 @@ main {
     to {
         opacity: 1;
     }
+}
+
+footer{
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
 }
