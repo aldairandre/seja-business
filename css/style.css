@@ -25,7 +25,11 @@ header {
     left: 0;
     right: 0;
     z-index: 2;
-    background-color: salmon;
+}
+
+header.ative{
+    background-color: black;
+    color: white;
 }
 
 nav {
@@ -35,15 +39,11 @@ nav {
     padding: 5px 10px;
 }
 
-.logo h2 {
-    color: rgb(26, 85, 161);
+.logo {
+    height: 60px;
 }
-
-
-nav {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.icone {
+    height: 40px;
 }
 .nav-lista {
     display: none;
@@ -74,7 +74,7 @@ main {
 .banner{
     width: 100%;
     min-height: 350px;
-    margin-top: 38px;
+    margin-top: 85px;
     background-image: url(../svg_img/029-drawkit-full-stack-man-colour.svg );
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,7 +87,7 @@ main {
 }
 
 .container-descridcao h1 {
-    max-width: 60%; 
+    max-width: 80%; 
     line-height: 2rem;
     font-size: 16pt;
     font-family: 'Bebas Neue', cursive,sans-serif;
