@@ -1,23 +1,26 @@
 const header = document.querySelector('header')
 
-const logo = document.querySelectorAll('.logo')
+const logo = document.querySelector('.logo')
 
-const menu = document.querySelector('.nav-lista')
+const menu = document.querySelector('.fixed__logo')
 
 menu.addEventListener('click',() => {
     menu.classList.toggle('menu-ative')
 })
 
-window.addEventListener('scroll',() => {
+
+function menuDark(estado,imagem){
     if(window.pageYOffset > 30){
-        header.classList.add('ative')
-        logo[0].attributes.src = "../svg_img/logo-seja-business-dark.png"
-
-    }else if(window.scrollY == 0) {
-        header.classList.remove('ative')
+        estado.classList.add('ative')
+        imagem.src = './svg_img/logo-seja-business-dark.png';
+    }else {
+        estado.classList.remove('ative')
+        imagem.src = './svg_img/logo-seja-business.png';
     }
-})
+}
 
+window.addEventListener('scroll',() => menuDark(header,logo))
+//window.addEventListener('scroll',function (){menuDark(header,logo)})
 
 
 
