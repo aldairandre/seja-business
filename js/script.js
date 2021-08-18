@@ -1,11 +1,19 @@
+"use strict"
+
 const header = document.querySelector('header')
 
 const logo = document.querySelector('.logo')
 
-const menu = document.querySelector('.fixed__logo')
+const iconeDeMenu = document.querySelector('.icone')
 
-menu.addEventListener('click',() => {
-    menu.classList.toggle('menu-ative')
+iconeDeMenu.addEventListener('click',() => {
+    const nav_list = document.querySelector('.nav-lista')
+    nav_list.classList.add('menu-ative')
+    const apagar = document.querySelector('.apagar')
+    apagar.addEventListener('click',function() {
+        nav_list.classList.remove('menu-ative')
+    })
+    
 })
 
 
@@ -21,16 +29,3 @@ function menuDark(estado,imagem){
 
 window.addEventListener('scroll',() => menuDark(header,logo))
 //window.addEventListener('scroll',function (){menuDark(header,logo)})
-
-
-
-
-
-/**
- * const janela = window.addEventListener('scroll',function(){
-    const y = window.scrollY;
-    return console.log(y)
-})
-
-console.log(janela);
- */
