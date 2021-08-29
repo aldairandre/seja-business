@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
@@ -44,7 +44,7 @@ nav {
     z-index:6;
 }
 .icone {
-    height: 40px;
+    
 }
 .nav-lista {
     display: none;
@@ -160,10 +160,7 @@ main {
 }
 
 .item-quem {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: rgba(2, 11, 133, 0.719);
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 

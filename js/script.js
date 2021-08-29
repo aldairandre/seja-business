@@ -2,14 +2,14 @@
 
 const header = document.querySelector('header')
 
-const logo = document.querySelector('.logo')
+const logo = document.getElementById('logo')
 
-const iconeDeMenu = document.querySelector('.icone')
+const iconeDeMenu = document.getElementById('icone')
 
 iconeDeMenu.addEventListener('click',() => {
     const nav_list = document.querySelector('.nav-lista')
     nav_list.classList.add('menu-ative')
-    const apagar = document.querySelector('.apagar')
+    const apagar = document.getElementById('apagar')
     apagar.addEventListener('click',function() {
         nav_list.classList.remove('menu-ative')
     })
