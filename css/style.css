@@ -43,9 +43,7 @@ nav {
     height: 60px;
     z-index:6;
 }
-.icone {
-    
-}
+
 .nav-lista {
     display: none;
     list-style: none;
@@ -257,9 +255,10 @@ main {
     }
     
     .logo {
-        height: 50px;
+        height: 80px;
     }
-    .icone {
+
+    .fa-align-justify::before {
         display: none;
     }
 
