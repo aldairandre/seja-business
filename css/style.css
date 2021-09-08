@@ -110,13 +110,6 @@ main {
     padding: 10px;
 }
 
-.informacoes-gerais {
-    background-image: url('../svg_img/bg-main-sections1.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .container-descridcao {
     position: static;
     height: 100%;
