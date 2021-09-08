@@ -45,7 +45,12 @@ nav {
 }
 .icone {
     font-size: 2rem;
+} 
+
+.apagar-icone {
+    font-size: 2.2rem;
 }
+
 .nav-lista {
     display: none;
     list-style: none;
