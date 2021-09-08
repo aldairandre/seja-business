@@ -44,7 +44,7 @@ nav {
     z-index:6;
 }
 .icone {
-    height: 40px;
+    font-size: 2rem;
 }
 .nav-lista {
     display: none;
