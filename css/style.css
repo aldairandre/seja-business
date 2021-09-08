@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
@@ -160,10 +160,7 @@ main {
 }
 
 .item-quem {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: rgba(2, 11, 133, 0.719);
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
@@ -260,9 +257,10 @@ main {
     }
     
     .logo {
-        height: 50px;
+        height: 80px;
     }
-    .icone {
+
+    .fa-align-justify::before {
         display: none;
     }
 
