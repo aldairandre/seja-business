@@ -258,7 +258,7 @@ main {
         height: 80px;
     }
 
-    .icone {
+    #icone {
         display: none;
     }
 
