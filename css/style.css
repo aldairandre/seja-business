@@ -43,6 +43,13 @@ nav {
     height: 60px;
     z-index:6;
 }
+.icone {
+    font-size: 2rem;
+} 
+
+.apagar-icone {
+    font-size: 2.2rem;
+}
 
 .nav-lista {
     display: none;
@@ -278,7 +285,7 @@ main {
         height: 80px;   
     }
 
-    .fa-align-justify::before {
+    #icone {
         display: none;
     }
 
