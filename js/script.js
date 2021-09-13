@@ -6,6 +6,8 @@ const logo = document.getElementById('logo')
 
 const iconeDeMenu = document.getElementById('icone')
 
+const titulo = document.getElementById('titulo')
+
 iconeDeMenu.addEventListener('click',() => {
     const nav_list = document.querySelector('.nav-lista')
     nav_list.classList.add('menu-ative')
@@ -27,5 +29,18 @@ function menuDark(estado,imagem){
     }
 }
 
+function typeWriter(elemento) {
+    const textoArray = elemento.textContent.split('');
+    console.log(textoArray);
+    elemento.textContent = '';
+    textoArray.forEach((letra,i) => {
+        setTimeout(function(){
+            elemento.textContent += letra;
+        },75 * i)
+    })
+}
+
 window.addEventListener('scroll',() => menuDark(header,logo))
 //window.addEventListener('scroll',function (){menuDark(header,logo)})
+
+typeWriter(titulo)

@@ -97,11 +97,31 @@ main {
     height: 400px;
     background-size: cover;
     margin-top: 85px;
-    background-image: url(../svg_img/029-drawkit-full-stack-man-colour.svg );
+    background-image: url(../svg_img/bg-main-sections4-mobile.jpg );
     background-repeat: no-repeat;
     background-position: center center;
     padding: 10px;
+    
 }
+
+.banner h1 {
+    animation : typing 4s steps(40) 1s normal;
+}
+
+.banner h1::after {
+    content: '';
+    border-right: solid 4px rgba(34, 147, 223, 1);
+    animation : blinkCursor 500ms infinite normal;
+}
+
+@keyframes blinkCursor{
+    form{
+        border-right: solid 4px rgba(34, 147, 223, 1) 
+    }
+    to{
+        border-right: solid 4px rgba(34, 147, 223, 0)      
+    }
+} 
 
 .informacoes-gerais {
     background-image: url('../svg_img/bg-main-sections1.jpg');
@@ -255,7 +275,7 @@ main {
     }
     
     .logo {
-        height: 80px;
+        height: 80px;   
     }
 
     .fa-align-justify::before {
